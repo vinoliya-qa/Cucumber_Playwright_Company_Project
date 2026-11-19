@@ -1,0 +1,108 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "file-upload-functionality;verify-single-file-upload",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify single file upload",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 9936412499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3919556499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 8009819999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user opens the file upload page",
+            "match": {
+              "location": "step-definitions\\fileUpload.steps.js:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 80423200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user selects the sample file",
+            "match": {
+              "location": "step-definitions\\fileUpload.steps.js:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 255778099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user clicks the upload button",
+            "match": {
+              "location": "step-definitions\\fileUpload.steps.js:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 16369999
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "uploaded file name should be displayed",
+            "match": {
+              "location": "step-definitions\\fileUpload.steps.js:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 7956371600
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4906330300
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "file-upload-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "File Upload Functionality",
+    "tags": [],
+    "uri": "features\\fileUpload.feature"
+  }
+]

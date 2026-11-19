@@ -1,0 +1,22 @@
+{
+  "name": "cucumber_playwright_company_project",
+  "version": "1.0.0",
+  "description": "Cucumber Playwright Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:regression": "cucumber-js --tags @regression",
+   "report": "node reports/generate-report.js",
+    "test:report": "cucumber-js && node generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.65.1",
+    "cucumber-html-reporter": "^7.2.0"
+  }
+}
