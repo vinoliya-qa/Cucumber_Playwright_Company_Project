@@ -25,11 +25,18 @@ pipeline {
                 bat 'npm test'
             }
         }
+
+        stage('Generate HTML Report') {
+            steps {
+                bat 'npm run report'
+            }
+        }
     }
 
     post {
         always {
-            echo 'Cucumber Playwright execution completed'
+            archiveArtifacts artifacts: 'reports/**, test-results/**',
+                             allowEmptyArchive: true
         }
     }
 }
