@@ -1,6 +1,6 @@
 module.exports = {
     default: {
-        paths: ['features/fileUpload.feature'],
+      paths: ['features/**/*.feature'],
 
         require: [
             'support/**/*.js',
