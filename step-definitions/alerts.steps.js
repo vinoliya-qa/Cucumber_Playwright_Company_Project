@@ -24,9 +24,9 @@ Before(async function () {
     fs.mkdirSync(config.screenshotDir, { recursive: true });
     fs.mkdirSync(config.videoDir, { recursive: true });
 
-    browser = await chromium.launch({
-        headless: config.headless
-    });
+ browser = await chromium.launch({
+    headless: process.env.CI ? true : config.headless
+});
 
     context = await browser.newContext({
         recordVideo: {
