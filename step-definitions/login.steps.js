@@ -144,3 +144,5 @@ When('user reads complete table using raw', async function (dataTable) {
 
 });
 
+// Git branch practice - feature login
+
