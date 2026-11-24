@@ -20,10 +20,9 @@ setDefaultTimeout(config.timeout);
 // =====================================
 
 Before(async function () {
-
-    this.browser = await chromium.launch({
-        headless: config.headless
-    });
+this.browser = await chromium.launch({
+    headless: process.env.CI ? true : config.headless
+});
 
     this.context = await this.browser.newContext();
 
